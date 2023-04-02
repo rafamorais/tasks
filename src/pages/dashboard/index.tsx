@@ -18,7 +18,6 @@ interface DashboardProps {
 }
 
 const Dashboard = ({ user }: DashboardProps) => {
-  console.log(user);
   const [input, setInput] = useState("");
   const [publicTask, setPublicTask] = useState(false);
 
@@ -54,6 +53,7 @@ const Dashboard = ({ user }: DashboardProps) => {
       <Head>
         <title>My tasks painel</title>
       </Head>
+
       <main className={styles.main}>
         <section className={styles.content}>
           <div className={styles.contentForm}>
